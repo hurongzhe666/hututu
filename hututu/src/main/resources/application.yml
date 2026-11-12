@@ -1,0 +1,35 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /api
+    session:
+      timeout: 2592000 # 30天
+spring:
+  application:
+    name: hututu-intelligentImageBed
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      location: E:./hututu/unload
+      max-file-size: 10MB # 默认上传大小为1MB
+  session:
+    store-type: redis # session 存储类型
+
+
+
+
+knife4j:
+  enable: true
+  openapi:
+    title: 弧图图-智能图床
+
+    email: whltaoin@163.com
+    url: htt://www.varin.cn
+    version: V1.0.0
+    group:
+      default:
+        group-name: ""
+        api-rule: package
+        api-rule-resources:
+          - cn.varin.hututu.controller

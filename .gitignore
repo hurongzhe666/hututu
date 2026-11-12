@@ -1,0 +1,49 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+*-*.yml
+
+# 本地环境配置（含数据库密码、COS 密钥等敏感信息），禁止提交
+**/application-local.yml
+*.local.yml
+
+# 编译产物（IDEA 会把 src/main/resources 下的 yml 复制进 target/classes，
+# 一旦提交就会把 application-local.yml 里的密钥带进仓库）
+**/target/
+**/classes/
+
+
+
+
